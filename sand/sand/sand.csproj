@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="微信图片_20220319002927.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="微信图片_20220319002927.png" />
+  </ItemGroup>
+
+</Project>

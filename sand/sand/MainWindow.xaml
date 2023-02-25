@@ -1,0 +1,82 @@
+﻿<Window x:Class="sand.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sand"
+        mc:Ignorable="d"
+         Title="随机排座" Height="502" Width="900">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <LinearGradientBrush.RelativeTransform>
+                    <TransformGroup>
+                        <ScaleTransform CenterY="0.65" CenterX="0.5"/>
+                        <SkewTransform CenterY="0.65" CenterX="0.5" AngleX="60" AngleY="1"/>
+                        <RotateTransform Angle="35" CenterY="0.65" CenterX="0.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </LinearGradientBrush.RelativeTransform>
+                <GradientStop Color="#FFDEF594" Offset="0.925"/>
+                <GradientStop Color="#FFE0A97B" Offset="0.05"/>
+                <GradientStop Color="#FF86F97D" Offset="0.644"/>
+                <GradientStop Color="#FFDABE6D" Offset="0.364"/>
+                <GradientStop Color="#FFD9F18C" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="164*"/>
+            <ColumnDefinition Width="209*"/>
+            <ColumnDefinition Width="357*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="us" Content="排座" HorizontalAlignment="Left" Height="20" Margin="34,27,0,0" VerticalAlignment="Top" Width="46" Click="us_Click" Grid.Column="1" Grid.ColumnSpan="2" UseLayoutRounding="True" Padding="1,1,1,1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFA28989"/>
+                    <GradientStop Color="#19E4BF7F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="clac1" HorizontalAlignment="Left" Height="210" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Margin="-3,77,0,0" BorderThickness="1,1,0,1" Grid.ColumnSpan="2" Background="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Height="184" Margin="158,77,0,0" Text="十九班排座&#xD;&#xA;秉持着&#xD;&#xA;绝对随机&#xD;&#xA;公平公正公开&#xD;&#xA;的原则&#xD;&#xA;绝无小动作小手脚" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" FontSize="22" BorderThickness="0,0,0,0" Grid.Column="4" IsReadOnly="True" Background="{x:Null}" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="clac2" HorizontalAlignment="Left" Height="210" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Margin="57,77,0,0" BorderThickness="0,1,1,1" Grid.Column="1" Grid.ColumnSpan="2" Background="{x:Null}"/>
+        <TextBox x:Name="clac3" HorizontalAlignment="Left" Height="210" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Margin="78,77,0,0" BorderThickness="1,1,0,1" Grid.Column="2" Background="{x:Null}"/>
+        <TextBox x:Name="clac4" HorizontalAlignment="Left" Height="210" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Margin="145,77,0,0" BorderThickness="0,1,1,1" Grid.Column="2" Grid.ColumnSpan="2" Background="{x:Null}"/>
+        <TextBox x:Name="clac5" HorizontalAlignment="Left" Height="210" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Margin="66,77,0,0" BorderThickness="1,1,0,1" Grid.Column="3" Background="{x:Null}"/>
+        <TextBox x:Name="clac6" HorizontalAlignment="Left" Height="210" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Margin="132,77,0,0" BorderThickness="0,1,1,1" Grid.Column="3" Background="{x:Null}"/>
+        <TextBox x:Name="clac7" HorizontalAlignment="Left" Height="210" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Margin="8,77,0,0" BorderThickness="1,1,0,1" Grid.Column="4" Background="{x:Null}"/>
+        <TextBox x:Name="clac8" HorizontalAlignment="Left" Height="210" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Margin="74,77,0,0" BorderThickness="0,1,1,1" Grid.Column="4" Background="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Height="73" Margin="18,325,0,0" Text="本作品由戴济泽耗时《好长时间》独立完成&#xA;版权所有，侵权必究" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" FontSize="20" BorderThickness="0,0,0,0" IsReadOnly="True" Grid.Column="1" Grid.ColumnSpan="3" Background="{x:Null}"/>
+        <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="133" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" FontSize="48" IsReadOnly="True" TextAlignment="Left" Margin="184,310,0,0" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5">
+            <TextBox.Background>
+                <ImageBrush ImageSource="/微信图片_20220319002927.png"/>
+            </TextBox.Background>
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.212"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.769"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+            <TextBox.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF5073CA"/>
+                    <GradientStop Color="#FF8E812C" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Foreground>
+        </TextBox>
+        <Button x:Name="us_Copy" Content="重置" HorizontalAlignment="Left" Height="20" Margin="20,27,0,0" VerticalAlignment="Top" Width="46" Click="us_cClick" Grid.Column="2">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFA28989"/>
+                    <GradientStop Color="#1968E04F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox Grid.ColumnSpan="3" Grid.Column="1" HorizontalAlignment="Left" Height="44" Margin="57,403,0,0" Text="     广告位招租" TextWrapping="Wrap" VerticalAlignment="Top" Width="264" Background="Transparent" FontSize="30" FontWeight="Bold" FontStyle="Normal" TextDecorations="{x:Null}" BorderThickness="2,2,2,2"/>
+
+    </Grid>
+</Window>
